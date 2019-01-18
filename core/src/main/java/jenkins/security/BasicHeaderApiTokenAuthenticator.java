@@ -19,7 +19,7 @@ import static java.util.logging.Level.*;
  * @author Kohsuke Kawaguchi
  * @since 1.576
  */
-@Extension
+//@Extension
 public class BasicHeaderApiTokenAuthenticator extends BasicHeaderAuthenticator {
     @Override
     public Authentication authenticate(HttpServletRequest req, HttpServletResponse rsp, String username, String password) throws ServletException {

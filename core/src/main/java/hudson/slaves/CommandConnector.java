@@ -49,7 +49,7 @@ public class CommandConnector extends ComputerConnector {
         return new CommandLauncher(command,new EnvVars("SLAVE",host));
     }
 
-    @Extension @Symbol("command")
+   // @Extension @Symbol("command")
     public static class DescriptorImpl extends ComputerConnectorDescriptor {
         @Override
         public String getDisplayName() {

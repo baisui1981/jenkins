@@ -78,7 +78,7 @@ public class CallableDirectionChecker extends RoleChecker {
      * Installs {@link CallableDirectionChecker} to every channel.
      */
     @Restricted(DoNotUse.class) // impl
-    @Extension
+  //  @Extension
     public static class ChannelConfiguratorImpl extends ChannelConfigurator {
         @Override
         public void onChannelBuilding(ChannelBuilder builder, Object context) {
@@ -97,7 +97,7 @@ public class CallableDirectionChecker extends RoleChecker {
      *
      * For the bypass "kill" switch to be effective, it needs to have a high enough priority
      */
-    @Extension(ordinal=100)
+  //  @Extension(ordinal=100)
     public static class DefaultWhitelist extends CallableWhitelist {
         @Override
         public boolean isWhitelisted(RoleSensitive subject, Collection<Role> expected, Object context) {

@@ -8,7 +8,7 @@ import hudson.Extension;
  * @author Kohsuke Kawaguchi
  * @since 1.351
  */
-@Extension
+//@Extension
 public class LogoutCommand extends CLICommand {
     @Override
     public String getShortDescription() {

@@ -34,7 +34,7 @@ import org.kohsuke.args4j.Argument;
  * @author ogondza
  * @since 1.538
  */
-@Extension
+//@Extension
 public class UpdateViewCommand extends CLICommand {
 
     @Argument(usage="Name of the view to update", required=true)

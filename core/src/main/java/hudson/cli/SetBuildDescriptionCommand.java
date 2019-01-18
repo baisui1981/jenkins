@@ -9,7 +9,7 @@ import java.io.Serializable;
 import org.apache.commons.io.IOUtils;
 import org.kohsuke.args4j.Argument;
 
-@Extension
+//@Extension
 public class SetBuildDescriptionCommand extends CLICommand implements Serializable {
 
     @Override

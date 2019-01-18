@@ -6,7 +6,7 @@ import org.jenkinsci.Symbol;
 /**
  * @author Kohsuke Kawaguchi
  */
-@Extension(ordinal=3) @Symbol("systemProperties")
+//@Extension(ordinal=3) @Symbol("systemProperties")
 public class SystemPropertySlaveInfo extends SlaveSystemInfo {
     @Override
     public String getDisplayName() {

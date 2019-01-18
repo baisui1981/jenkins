@@ -42,7 +42,7 @@ import java.util.logging.Logger;
  * @author pjanouse
  * @since TODO
  */
-@Extension
+//@Extension
 public class OnlineNodeCommand extends CLICommand {
 
     @Argument(metaVar = "NAME", usage = "Agent name, or empty string for master", required = true, multiValued = true)

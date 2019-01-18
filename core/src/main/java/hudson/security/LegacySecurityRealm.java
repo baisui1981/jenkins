@@ -98,7 +98,7 @@ public final class LegacySecurityRealm extends SecurityRealm implements Authenti
     @Restricted(NoExternalUse.class)
     public static /*almost final*/ Descriptor<SecurityRealm> DESCRIPTOR;
 
-    @Extension @Symbol("legacy")
+  //  @Extension @Symbol("legacy")
     public static class DescriptorImpl extends  Descriptor<SecurityRealm> {
         public DescriptorImpl() {
             DESCRIPTOR = this;

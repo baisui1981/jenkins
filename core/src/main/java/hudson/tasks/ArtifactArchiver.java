@@ -57,7 +57,7 @@ import jenkins.model.BuildDiscarder;
 import jenkins.model.Jenkins;
 import jenkins.tasks.SimpleBuildStep;
 import jenkins.util.BuildListenerAdapter;
-import org.kohsuke.stapler.DataBoundSetter;
+//import org.kohsuke.stapler.DataBoundSetter;
 
 /**
  * Copies the artifacts into an archive directory.
@@ -158,7 +158,8 @@ public class ArtifactArchiver extends Recorder implements SimpleBuildStep {
         return excludes;
     }
 
-    @DataBoundSetter public final void setExcludes(String excludes) {
+    //@DataBoundSetter 
+    public final void setExcludes(String excludes) {
         this.excludes = Util.fixEmptyAndTrim(excludes);
     }
 
@@ -171,7 +172,7 @@ public class ArtifactArchiver extends Recorder implements SimpleBuildStep {
         return onlyIfSuccessful;
     }
 
-    @DataBoundSetter public final void setOnlyIfSuccessful(boolean onlyIfSuccessful) {
+    public final void setOnlyIfSuccessful(boolean onlyIfSuccessful) {
         this.onlyIfSuccessful = onlyIfSuccessful;
     }
 
@@ -180,7 +181,7 @@ public class ArtifactArchiver extends Recorder implements SimpleBuildStep {
     }
 
     /** Whether to fingerprint the artifacts after we archive them. */
-    @DataBoundSetter public void setFingerprint(boolean fingerprint) {
+    public void setFingerprint(boolean fingerprint) {
         this.fingerprint = fingerprint;
     }
 
@@ -188,7 +189,7 @@ public class ArtifactArchiver extends Recorder implements SimpleBuildStep {
         return allowEmptyArchive;
     }
 
-    @DataBoundSetter public final void setAllowEmptyArchive(boolean allowEmptyArchive) {
+  public final void setAllowEmptyArchive(boolean allowEmptyArchive) {
         this.allowEmptyArchive = allowEmptyArchive;
     }
 
@@ -196,7 +197,7 @@ public class ArtifactArchiver extends Recorder implements SimpleBuildStep {
         return defaultExcludes;
     }
 
-    @DataBoundSetter public final void setDefaultExcludes(boolean defaultExcludes) {
+    public final void setDefaultExcludes(boolean defaultExcludes) {
         this.defaultExcludes = defaultExcludes;
     }
     
@@ -204,7 +205,7 @@ public class ArtifactArchiver extends Recorder implements SimpleBuildStep {
         return caseSensitive;
     }
 
-    @DataBoundSetter public final void setCaseSensitive(boolean caseSensitive) {
+ public final void setCaseSensitive(boolean caseSensitive) {
         this.caseSensitive = caseSensitive;
     }
 
@@ -344,7 +345,8 @@ public class ArtifactArchiver extends Recorder implements SimpleBuildStep {
         }
     }
 
-    @Extension public static final class Migrator extends ItemListener {
+    //@Extension 
+    public static final class Migrator extends ItemListener {
         @SuppressWarnings("deprecation")
         @Override public void onLoaded() {
             for (AbstractProject<?,?> p : Jenkins.getInstance().getAllItems(AbstractProject.class)) {

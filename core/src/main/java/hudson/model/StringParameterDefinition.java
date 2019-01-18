@@ -70,7 +70,7 @@ public class StringParameterDefinition extends SimpleParameterDefinition {
         return v;
     }
 
-    @Extension @Symbol({"string","stringParam"})
+ //   @Extension @Symbol({"string","stringParam"})
     public static class DescriptorImpl extends ParameterDescriptor {
         @Override
         public String getDisplayName() {

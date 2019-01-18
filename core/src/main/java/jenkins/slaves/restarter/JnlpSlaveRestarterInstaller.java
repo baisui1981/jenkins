@@ -29,7 +29,7 @@ import jenkins.security.MasterToSlaveCallable;
  *
  * @author Kohsuke Kawaguchi
  */
-@Extension
+//@Extension
 public class JnlpSlaveRestarterInstaller extends ComputerListener implements Serializable {
     @Override
     public void onOnline(final Computer c, final TaskListener listener) throws IOException, InterruptedException {

@@ -398,9 +398,9 @@ public abstract class LoadStatistics {
             }
 
             // update statistics of the entire system
-            j.unlabeledLoad.updateCounts(j.unlabeledLoad.computeSnapshot(bis));
-
-            j.overallLoad.updateCounts(j.overallLoad.computeSnapshot(bis));
+//            j.unlabeledLoad.updateCounts(j.unlabeledLoad.computeSnapshot(bis));
+//
+//            j.overallLoad.updateCounts(j.overallLoad.computeSnapshot(bis));
         }
 
         private int count(List<Queue.BuildableItem> bis, Label l) {

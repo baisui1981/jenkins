@@ -49,9 +49,13 @@ THE SOFTWARE.
 
   <modules>
     <module>core</module>
+	<module>tis-core</module>
+	
+	<!--
     <module>war</module>
     <module>test</module>
     <module>cli</module>
+    -->
   </modules>
 
   <scm>

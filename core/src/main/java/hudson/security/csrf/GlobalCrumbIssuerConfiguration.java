@@ -36,7 +36,7 @@ import org.kohsuke.stapler.StaplerRequest;
  *
  * @author Kohsuke Kawaguchi
  */
-@Extension(ordinal=195) @Symbol("crumb") // immediately after the security setting
+//@Extension(ordinal=195) @Symbol("crumb") // immediately after the security setting
 public class GlobalCrumbIssuerConfiguration extends GlobalConfiguration {
     @Override
     public GlobalConfigurationCategory getCategory() {

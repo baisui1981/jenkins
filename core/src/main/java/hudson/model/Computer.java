@@ -1311,7 +1311,7 @@ public /*transient*/ abstract class Computer extends Actionable implements Acces
                 runs.newBuilds(), Run.FEED_ADAPTER, req, rsp);
     }
 
-    @RequirePOST
+   // @RequirePOST
     public HttpResponse doToggleOffline(@QueryParameter String offlineMessage) throws IOException, ServletException {
         if(!temporarilyOffline) {
             checkPermission(DISCONNECT);
@@ -1393,7 +1393,7 @@ public /*transient*/ abstract class Computer extends Actionable implements Acces
     /**
      * Accepts the update to the node configuration.
      */
-    @RequirePOST
+    //@RequirePOST
     public void doConfigSubmit( StaplerRequest req, StaplerResponse rsp ) throws IOException, ServletException, FormException {
         checkPermission(CONFIGURE);
 

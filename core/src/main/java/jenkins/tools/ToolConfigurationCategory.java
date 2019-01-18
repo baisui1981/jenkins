@@ -8,7 +8,7 @@ import jenkins.model.GlobalConfigurationCategory;
  *
  * @since 2.0
  */
-@Extension
+//@Extension
 public class ToolConfigurationCategory extends GlobalConfigurationCategory {
     @Override
     public String getShortDescription() {

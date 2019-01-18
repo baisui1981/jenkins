@@ -8,7 +8,7 @@ import org.kohsuke.args4j.Argument;
 
 import java.io.Serializable;
 
-@Extension
+//@Extension
 public class SetBuildDisplayNameCommand extends CLICommand implements Serializable {
     private static final long serialVersionUID = 6665171784136358536L;
 

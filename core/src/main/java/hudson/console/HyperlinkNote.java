@@ -84,7 +84,7 @@ public class HyperlinkNote extends ConsoleNote {
         }
     }
 
-    @Extension @Symbol("hyperlink")
+    //@Extension @Symbol("hyperlink")
     public static class DescriptorImpl extends ConsoleAnnotationDescriptor {
         public String getDisplayName() {
             return "Hyperlinks";

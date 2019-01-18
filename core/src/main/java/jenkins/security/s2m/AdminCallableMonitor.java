@@ -20,7 +20,7 @@ import java.io.IOException;
  * @since 1.THU
  * @author Kohsuke Kawaguchi
  */
-@Extension @Symbol("slaveToMasterAccessControl")
+//@Extension @Symbol("slaveToMasterAccessControl")
 public class AdminCallableMonitor extends AdministrativeMonitor {
     @Inject
     Jenkins jenkins;

@@ -38,7 +38,7 @@ public class TextParameterDefinition extends StringParameterDefinition {
         super(name, defaultValue, description);
     }
 
-    @Extension @Symbol({"text","textParam"})
+   // @Extension @Symbol({"text","textParam"})
     public static class DescriptorImpl extends ParameterDescriptor {
         @Override
         public String getDisplayName() {

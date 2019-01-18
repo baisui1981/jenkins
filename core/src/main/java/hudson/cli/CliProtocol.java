@@ -26,7 +26,7 @@ import java.net.Socket;
  * @author Kohsuke Kawaguchi
  * @since 1.467
  */
-@Extension @Symbol("cli")
+//@Extension @Symbol("cli")
 public class CliProtocol extends AgentProtocol {
     @Inject
     NioChannelSelector nio;

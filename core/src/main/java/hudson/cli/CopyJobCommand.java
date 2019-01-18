@@ -36,7 +36,7 @@ import org.kohsuke.args4j.Argument;
  * 
  * @author Kohsuke Kawaguchi
  */
-@Extension
+//@Extension
 public class CopyJobCommand extends CLICommand {
     @Override
     public String getShortDescription() {

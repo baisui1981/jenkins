@@ -39,7 +39,7 @@ import java.util.logging.Logger;
  * @author ogondza, pjanouse
  * @since 1.538
  */
-@Extension
+//@Extension
 public class DeleteViewCommand extends CLICommand {
 
     @Argument(usage="View names to delete", required=true, multiValued=true)

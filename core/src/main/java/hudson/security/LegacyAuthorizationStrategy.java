@@ -55,7 +55,7 @@ public final class LegacyAuthorizationStrategy extends AuthorizationStrategy {
         return Collections.singleton("admin");
     }
 
-    @Extension @Symbol("legacy")
+  //  @Extension @Symbol("legacy")
     public static final class DescriptorImpl extends Descriptor<AuthorizationStrategy> {
         public String getDisplayName() {
             return Messages.LegacyAuthorizationStrategy_DisplayName();

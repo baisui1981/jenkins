@@ -243,7 +243,7 @@ public class SimpleScheduledRetentionStrategy extends RetentionStrategy<SlaveCom
         return (lastStart < now && lastStop > now) || (nextStart < now && nextStop > now);
     }
 
-    @Extension @Symbol("schedule")
+  //  @Extension @Symbol("schedule")
     public static class DescriptorImpl extends Descriptor<RetentionStrategy<?>> {
         public String getDisplayName() {
             return Messages.SimpleScheduledRetentionStrategy_displayName();

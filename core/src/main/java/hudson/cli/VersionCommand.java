@@ -31,7 +31,7 @@ import jenkins.model.Jenkins;
  *
  * @author Kohsuke Kawaguchi
  */
-@Extension
+//@Extension
 public class VersionCommand extends CLICommand {
     @Override
     public String getShortDescription() {

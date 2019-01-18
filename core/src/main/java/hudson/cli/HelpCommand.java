@@ -38,7 +38,7 @@ import org.kohsuke.args4j.Argument;
  *
  * @author Kohsuke Kawaguchi
  */
-@Extension
+//@Extension
 public class HelpCommand extends CLICommand {
 
     @Argument(metaVar="COMMAND", usage="Name of the command")

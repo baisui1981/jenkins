@@ -45,7 +45,7 @@ import org.jenkinsci.Symbol;
  *
  * @author Kohsuke Kawaguchi
  */
-@Extension @Symbol("workspaceCleanup")
+//@Extension @Symbol("workspaceCleanup")
 public class WorkspaceCleanupThread extends AsyncPeriodicWork {
     public WorkspaceCleanupThread() {
         super("Workspace clean-up");

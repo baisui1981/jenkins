@@ -40,7 +40,7 @@ import java.util.logging.Logger;
  * @author pjanouse
  * @since TODO
  */
-@Extension
+//@Extension
 public class DisconnectNodeCommand extends CLICommand {
     @Argument(metaVar = "NAME", usage = "Slave name, or empty string for master; comama-separated list is supported", required = true, multiValued = true)
     private List<String> nodes;

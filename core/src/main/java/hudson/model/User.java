@@ -1008,7 +1008,7 @@ public class User extends AbstractModelObject implements AccessControlled, Descr
     /**
      * Resolve user ID from full name
      */
-    @Extension @Symbol("fullName")
+   // @Extension @Symbol("fullName")
     public static class FullNameIdResolver extends CanonicalIdResolver {
 
         @Override
@@ -1030,8 +1030,8 @@ public class User extends AbstractModelObject implements AccessControlled, Descr
      * Tries to verify if an ID is valid.
      * If so, we do not want to even consider users who might have the same full name.
      */
-    @Extension
-    @Restricted(NoExternalUse.class)
+//    @Extension
+//    @Restricted(NoExternalUse.class)
     public static class UserIDCanonicalIdResolver extends User.CanonicalIdResolver {
 
         private static /* not final */ boolean SECURITY_243_FULL_DEFENSE = 

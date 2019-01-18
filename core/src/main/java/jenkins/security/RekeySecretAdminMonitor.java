@@ -29,7 +29,7 @@ import java.util.logging.Logger;
  *
  * @author Kohsuke Kawaguchi
  */
-@Extension @Symbol("rekeySecret")
+//@Extension @Symbol("rekeySecret")
 public class RekeySecretAdminMonitor extends AsynchronousAdministrativeMonitor implements StaplerProxy {
 
     /**

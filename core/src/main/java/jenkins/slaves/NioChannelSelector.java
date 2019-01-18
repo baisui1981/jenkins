@@ -15,7 +15,7 @@ import java.util.logging.Logger;
  *
  * @author Kohsuke Kawaguchi
  */
-@Extension
+// @Extension
 public class NioChannelSelector {
     private NioChannelHub hub;
 

@@ -33,7 +33,7 @@ import jenkins.model.Jenkins;
  * @author pjanouse
  * @since TODO
  */
-@Extension
+//@Extension
 public class ReloadConfigurationCommand extends CLICommand {
 
     @Override

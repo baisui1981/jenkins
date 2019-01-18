@@ -22,7 +22,7 @@ import org.apache.commons.io.IOUtils;
  *
  * @author Kohsuke Kawaguchi
  */
-@Extension
+//@Extension
 public class ConsoleCommand extends CLICommand {
     @Override
     public String getShortDescription() {

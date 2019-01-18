@@ -160,7 +160,7 @@ public class ApiTokenProperty extends UserProperty {
         return this;
     }
 
-    @Extension @Symbol("apiToken")
+  //  @Extension @Symbol("apiToken")
     public static final class DescriptorImpl extends UserPropertyDescriptor {
         public String getDisplayName() {
             return Messages.ApiTokenProperty_DisplayName();

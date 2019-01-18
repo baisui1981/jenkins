@@ -22,8 +22,8 @@ import org.kohsuke.stapler.export.ExportedBean;
  * @author Ryan Campbell
  *
  */
-@Extension @Symbol("whoAmI")
-@ExportedBean
+//@Extension @Symbol("whoAmI")
+//@ExportedBean
 public class WhoAmI implements UnprotectedRootAction {
     
     public Api getApi() {

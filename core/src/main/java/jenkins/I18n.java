@@ -39,8 +39,8 @@ import java.util.Locale;
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>
  * @since 2.0
  */
-@Extension
-@Restricted(NoExternalUse.class)
+//@Extension
+//@Restricted(NoExternalUse.class)
 public class I18n implements RootAction {
 
     /**

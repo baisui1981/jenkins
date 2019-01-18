@@ -47,7 +47,7 @@ import org.kohsuke.stapler.QueryParameter;
  *
  * @author Kohsuke Kawaguchi
  */
-@Extension @Symbol("memoryUsage")
+//@Extension @Symbol("memoryUsage")
 public final class MemoryUsageMonitor extends PeriodicWork {
     /**
      * A memory group is conceptually a set of memory pools. 

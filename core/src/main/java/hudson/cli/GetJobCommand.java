@@ -30,7 +30,7 @@ import org.kohsuke.args4j.Argument;
 /**
  * @author Kohsuke Kawaguchi
  */
-@Extension
+//@Extension
 public class GetJobCommand extends CLICommand {
     @Argument(metaVar="JOB",usage="Name of the job",required=true)
     public AbstractItem job;

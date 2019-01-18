@@ -32,7 +32,7 @@ import org.jenkinsci.Symbol;
 /**
  * @author <a href="mailto:nicolas.deloof@gmail.com">Nicolas De Loof</a>
  */
-@Extension(ordinal = Integer.MIN_VALUE) @Symbol("shutDown")
+//@Extension(ordinal = Integer.MIN_VALUE) @Symbol("shutDown")
 public class ShutdownLink extends ManagementLink {
 
     @Override

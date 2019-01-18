@@ -11,7 +11,7 @@ import hudson.init.Initializer;
  * @author Kohsuke Kawaguchi
  * @since 1.538
  */
-@Extension
+//@Extension
 public class Uptime {
     private long startTime;
 

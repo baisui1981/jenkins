@@ -39,7 +39,7 @@ import org.kohsuke.args4j.Argument;
  * 
  * @author Michael Koch
  */
-@Extension
+//@Extension
 public class ListJobsCommand extends CLICommand {
     @Override
     public String getShortDescription() {

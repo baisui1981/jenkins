@@ -47,7 +47,7 @@ import static hudson.init.InitMilestone.EXTENSIONS_AUGMENTED;
  * @author Kohsuke Kawaguchi
  * @since 1.402
  */
-@Extension @Symbol("nullId")
+//@Extension @Symbol("nullId")
 public class NullIdDescriptorMonitor extends AdministrativeMonitor {
 
     private final List<Descriptor> problems = new ArrayList<Descriptor>();

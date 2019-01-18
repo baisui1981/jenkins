@@ -34,7 +34,7 @@ import hudson.model.View;
  * @author ogondza
  * @since 1.538
  */
-@Extension
+//@Extension
 public class CreateViewCommand extends CLICommand {
 
     @Argument(usage="Name of the view to use instead of the one in XML")

@@ -19,7 +19,7 @@ import java.util.List;
  *
  * @author Kohsuke Kawaguchi
  */
-@Extension
+//@Extension
 public class ListChangesCommand extends AbstractBuildRangeCommand {
     @Override
     public String getShortDescription() {

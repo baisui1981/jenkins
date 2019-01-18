@@ -40,7 +40,7 @@ import org.jenkinsci.Symbol;
  * @author Kohsuke Kawaguchi
  * @author Stephen Connolly
  */
-@Extension @Symbol("computerRetention")
+//@Extension @Symbol("computerRetention")
 public class ComputerRetentionWork extends PeriodicWork {
 
     /**

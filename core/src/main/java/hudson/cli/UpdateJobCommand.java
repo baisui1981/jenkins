@@ -33,7 +33,7 @@ import javax.xml.transform.stream.StreamSource;
 /**
  * @author Kohsuke Kawaguchi
  */
-@Extension
+//@Extension
 public class UpdateJobCommand extends CLICommand {
     @Argument(metaVar="JOB",usage="Name of the job",required=true)
     public AbstractItem job;

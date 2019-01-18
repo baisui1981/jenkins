@@ -37,7 +37,7 @@ import java.util.logging.Logger;
  * @author pjanouse
  * @since TODO
  */
-@Extension
+//@Extension
 public class DeleteNodeCommand extends CLICommand {
 
     @Argument(usage="Nodes name to delete", required=true, multiValued=true)

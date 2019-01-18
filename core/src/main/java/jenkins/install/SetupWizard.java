@@ -67,8 +67,8 @@ import org.kohsuke.accmod.restrictions.DoNotUse;
  * 
  * @since 2.0
  */
-@Restricted(NoExternalUse.class)
-@Extension
+//@Restricted(NoExternalUse.class)
+//@Extension
 public class SetupWizard extends PageDecorator {
     /**
      * The security token parameter name

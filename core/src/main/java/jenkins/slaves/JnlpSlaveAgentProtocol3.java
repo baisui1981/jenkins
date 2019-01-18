@@ -32,7 +32,7 @@ import jenkins.util.SystemProperties;
  * @author Akshay Dayal
  * @since 1.XXX
  */
-@Extension
+//@Extension
 public class JnlpSlaveAgentProtocol3 extends AgentProtocol {
     @Inject
     NioChannelSelector hub;

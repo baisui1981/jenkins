@@ -34,7 +34,7 @@ import org.kohsuke.args4j.Argument;
  * 
  * @author Kohsuke Kawaguchi
  */
-@Extension
+//@Extension
 public class CreateJobCommand extends CLICommand {
     @Override
     public String getShortDescription() {

@@ -66,7 +66,7 @@ import jenkins.util.SystemProperties;
 /**
  * @author Kohsuke Kawaguchi
  */
-@Extension
+//@Extension
 public class UsageStatistics extends PageDecorator {
     private final String keyImage;
 

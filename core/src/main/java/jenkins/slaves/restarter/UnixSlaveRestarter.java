@@ -16,7 +16,7 @@ import static java.util.logging.Level.*;
 /**
  * On Unix, restart via exec-ing to itself.
  */
-@Extension
+//@Extension
 public class UnixSlaveRestarter extends SlaveRestarter {
     private transient JavaVMArguments args;
 

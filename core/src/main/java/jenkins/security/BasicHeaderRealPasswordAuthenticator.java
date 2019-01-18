@@ -39,7 +39,7 @@ import static java.util.logging.Level.*;
  * @author Kohsuke Kawaguchi
  * @since 1.576
  */
-@Extension
+//@Extension
 public class BasicHeaderRealPasswordAuthenticator extends BasicHeaderAuthenticator {
     private AuthenticationDetailsSource authenticationDetailsSource = new AuthenticationDetailsSourceImpl();
 

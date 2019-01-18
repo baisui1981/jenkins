@@ -31,7 +31,7 @@ import org.jenkinsci.Symbol;
  *
  * @author Kohsuke Kawaguchi
  */
-@Extension(optional=true) @Symbol("hsErrPid")
+//@Extension(optional=true) @Symbol("hsErrPid")
 // TODO why would an extension using a built-in extension point need to be marked optional?
 public class HsErrPidList extends AdministrativeMonitor {
     /**

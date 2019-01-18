@@ -56,7 +56,7 @@ import org.kohsuke.stapler.StaplerResponse;
  *
  * @author Kohsuke Kawaguchi
  */
-@Extension(ordinal = Integer.MAX_VALUE - 210) @Symbol("securityConfig")
+//@Extension(ordinal = Integer.MAX_VALUE - 210) @Symbol("securityConfig")
 public class GlobalSecurityConfiguration extends ManagementLink implements Describable<GlobalSecurityConfiguration> {
     
     private static final Logger LOGGER = Logger.getLogger(GlobalSecurityConfiguration.class.getName());
@@ -168,7 +168,7 @@ public class GlobalSecurityConfiguration extends ManagementLink implements Descr
         return Jenkins.getInstance().getDescriptorOrDie(getClass());
     }
     
-    @Extension @Symbol("security")
+  //  @Extension @Symbol("security")
     public static final class DescriptorImpl extends Descriptor<GlobalSecurityConfiguration> {
         @Override
         public String getDisplayName() {

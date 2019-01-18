@@ -11,7 +11,7 @@ import org.kohsuke.args4j.CmdLineException;
  * @author Kohsuke Kawaguchi
  * @since 1.351
  */
-@Extension
+//@Extension
 public class LoginCommand extends CLICommand {
     @Override
     public String getShortDescription() {

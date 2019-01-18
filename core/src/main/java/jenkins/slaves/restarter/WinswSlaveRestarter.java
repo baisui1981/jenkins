@@ -12,7 +12,7 @@ import static org.apache.commons.io.IOUtils.*;
 /**
  * With winsw, restart via winsw
  */
-@Extension
+//@Extension
 public class WinswSlaveRestarter extends SlaveRestarter {
     private transient String exe;
 

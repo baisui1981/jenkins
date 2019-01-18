@@ -41,7 +41,7 @@ import java.util.List;
  *
  * @author Kohsuke Kawaguchi
  */
-@Extension @Symbol("diskUsageCheck")
+//@Extension @Symbol("diskUsageCheck")
 public final class HudsonHomeDiskUsageMonitor extends AdministrativeMonitor {
     /**
      * Value updated by {@link HudsonHomeDiskUsageChecker}.

@@ -984,7 +984,7 @@ public class UpdateCenter extends AbstractModelObject implements Saveable, OnMas
     /**
      * {@link AdministrativeMonitor} that checks if there's Jenkins update.
      */
-    @Extension @Symbol("coreUpdate")
+   // @Extension @Symbol("coreUpdate")
     public static final class CoreUpdateMonitor extends AdministrativeMonitor {
         public boolean isActivated() {
             Data data = getData();

@@ -18,7 +18,7 @@ import java.io.IOException;
  *
  * @author Kohsuke Kawaguchi
  */
-@Extension @Symbol("securityIsOff")
+//@Extension @Symbol("securityIsOff")
 public class SecurityIsOffMonitor extends AdministrativeMonitor {
     @Override
     public boolean isActivated() {

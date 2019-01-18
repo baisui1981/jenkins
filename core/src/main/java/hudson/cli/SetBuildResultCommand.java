@@ -34,7 +34,7 @@ import org.kohsuke.args4j.Argument;
  * 
  * @author Kohsuke Kawaguchi
  */
-@Extension
+//@Extension
 public class SetBuildResultCommand extends CommandDuringBuild {
     @Argument(metaVar="RESULT",required=true)
     public Result result;

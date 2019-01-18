@@ -148,7 +148,7 @@ public class UpgradeWizard extends InstallState {
         return HttpResponses.redirectToContextRoot();
     }
     
-    @Extension
+  //  @Extension
     public static class ListenForInstallComplete extends InstallStateFilter {
         @Override
         public InstallState getNextInstallState(InstallState current, Provider<InstallState> proceed) {

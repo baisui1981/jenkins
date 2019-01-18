@@ -62,7 +62,7 @@ public class FilePathSettingsProvider extends SettingsProvider {
         }
     }
 
-    @Extension(ordinal = 10) @Symbol("filePath")
+    //@Extension(ordinal = 10) @Symbol("filePath")
     public static class DescriptorImpl extends SettingsProviderDescriptor {
 
         @Override

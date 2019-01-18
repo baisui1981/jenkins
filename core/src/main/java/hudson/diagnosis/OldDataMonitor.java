@@ -71,7 +71,7 @@ import org.kohsuke.stapler.interceptor.RequirePOST;
  *
  * @author Alan.Harder@Sun.Com
  */
-@Extension @Symbol("oldData")
+//@Extension @Symbol("oldData")
 public class OldDataMonitor extends AdministrativeMonitor {
     private static final Logger LOGGER = Logger.getLogger(OldDataMonitor.class.getName());
 
@@ -123,7 +123,7 @@ public class OldDataMonitor extends AdministrativeMonitor {
 
     // Listeners to remove data here if resaved or deleted in regular Hudson usage
 
-    @Extension
+  //  @Extension
     public static final SaveableListener changeListener = new SaveableListener() {
         @Override
         public void onChange(Saveable obj, XmlFile file) {
@@ -131,7 +131,7 @@ public class OldDataMonitor extends AdministrativeMonitor {
         }
     };
 
-    @Extension
+  //  @Extension
     public static final ItemListener itemDeleteListener = new ItemListener() {
         @Override
         public void onDeleted(Item item) {
@@ -139,7 +139,7 @@ public class OldDataMonitor extends AdministrativeMonitor {
         }
     };
 
-    @Extension
+   // @Extension
     public static final RunListener<Run> runDeleteListener = new RunListener<Run>() {
         @Override
         public void onDeleted(Run run) {
@@ -431,7 +431,7 @@ public class OldDataMonitor extends AdministrativeMonitor {
         }
     }
 
-    @Extension @Symbol("oldData")
+  //  @Extension @Symbol("oldData")
     public static class ManagementLinkImpl extends ManagementLink {
         @Override
         public String getIconFileName() {

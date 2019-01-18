@@ -41,7 +41,7 @@ import java.util.logging.Logger;
  * @author pjanouse
  * @since TODO
  */
-@Extension
+//@Extension
 public class ReloadJobCommand extends CLICommand {
 
     @Argument(usage="Name of the job(s) to reload", required=true, multiValued=true)

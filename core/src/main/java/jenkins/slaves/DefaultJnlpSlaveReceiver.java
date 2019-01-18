@@ -25,7 +25,7 @@ import java.util.logging.Logger;
  * @since 1.561  
  * @since 1.614 handle() returns true on handshake error as it required in JnlpAgentReceiver.
  */
-@Extension
+//@Extension
 public class DefaultJnlpSlaveReceiver extends JnlpAgentReceiver {
     @Override
     public boolean handle(String nodeName, JnlpServerHandshake handshake) throws IOException, InterruptedException {

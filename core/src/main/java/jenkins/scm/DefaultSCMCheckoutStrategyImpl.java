@@ -13,7 +13,7 @@ public class DefaultSCMCheckoutStrategyImpl extends SCMCheckoutStrategy {
     @DataBoundConstructor
     public DefaultSCMCheckoutStrategyImpl() {}
 
-    @Extension @Symbol("standard")
+    //@Extension @Symbol("standard")
     public static class DescriptorImpl extends SCMCheckoutStrategyDescriptor {
         @Override
         public String getDisplayName() {

@@ -44,7 +44,7 @@ public class PaneStatusProperties extends UserProperty implements Saveable {
 		return this;
 	}
 	
-	@Extension @Symbol("paneStatus")
+	//@Extension @Symbol("paneStatus")
 	public static class DescriptorImpl extends UserPropertyDescriptor {
 
 		@Override

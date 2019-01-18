@@ -37,7 +37,7 @@ import java.util.List;
  *
  * @author Kohsuke Kawaguchi
  */
-@Extension
+//@Extension
 public class DeleteBuildsCommand extends AbstractBuildRangeCommand {
     @Override
     public String getShortDescription() {

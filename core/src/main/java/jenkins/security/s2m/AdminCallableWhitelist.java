@@ -20,7 +20,7 @@ import java.util.Collection;
  *
  * @author Kohsuke Kawaguchi
  */
-@Extension(ordinal=-100) @Symbol("admin")
+//@Extension(ordinal=-100) @Symbol("admin")
 public class AdminCallableWhitelist extends CallableWhitelist {
     @Inject
     AdminWhitelistRule rule;

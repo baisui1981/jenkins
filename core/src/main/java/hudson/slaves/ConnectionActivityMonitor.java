@@ -48,7 +48,7 @@ import java.util.logging.Logger;
  * @author Kohsuke Kawaguchi
  * @since 1.325
  */
-@Extension @Symbol("connectionActivityMonitor")
+//@Extension @Symbol("connectionActivityMonitor")
 public class ConnectionActivityMonitor extends AsyncPeriodicWork {
     public ConnectionActivityMonitor() {
         super("Connection Activity monitoring to agents");

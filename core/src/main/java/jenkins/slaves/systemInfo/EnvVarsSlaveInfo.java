@@ -6,7 +6,7 @@ import org.jenkinsci.Symbol;
 /**
  * @author Kohsuke Kawaguchi
  */
-@Extension(ordinal=2) @Symbol("envVars")
+//@Extension(ordinal=2) @Symbol("envVars")
 public class EnvVarsSlaveInfo extends SlaveSystemInfo {
     @Override
     public String getDisplayName() {

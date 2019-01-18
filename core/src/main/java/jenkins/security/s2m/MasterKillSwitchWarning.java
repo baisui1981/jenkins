@@ -15,7 +15,7 @@ import java.io.IOException;
  * @author Kohsuke Kawaguchi
  * @since 1.THU
  */
-@Extension
+//@Extension
 public class MasterKillSwitchWarning extends AdministrativeMonitor {
     @Inject
     AdminWhitelistRule rule;

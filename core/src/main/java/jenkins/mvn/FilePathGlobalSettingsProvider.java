@@ -62,7 +62,7 @@ public class FilePathGlobalSettingsProvider extends GlobalSettingsProvider {
 
     }
 
-    @Extension(ordinal = 10)
+    //@Extension(ordinal = 10)
     public static class DescriptorImpl extends GlobalSettingsProviderDescriptor {
 
         @Override

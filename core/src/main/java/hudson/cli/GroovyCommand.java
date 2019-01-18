@@ -45,7 +45,7 @@ import java.util.List;
  *
  * @author Kohsuke Kawaguchi
  */
-@Extension
+//@Extension
 public class GroovyCommand extends CLICommand {
     @Override
     public String getShortDescription() {

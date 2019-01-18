@@ -37,7 +37,7 @@ import java.util.logging.Logger;
  * @author pjanouse
  * @since TODO
  */
-@Extension
+//@Extension
 public class DeleteJobCommand extends CLICommand {
 
     @Argument(usage="Name of the job(s) to delete", required=true, multiValued=true)

@@ -33,7 +33,7 @@ import org.acegisecurity.GrantedAuthority;
  *
  * @author Kohsuke Kawaguchi
  */
-@Extension
+//@Extension
 public class WhoAmICommand extends CLICommand {
     @Override
     public String getShortDescription() {

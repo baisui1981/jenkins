@@ -49,7 +49,7 @@ import org.kohsuke.args4j.Argument;
  *
  * @author Kohsuke Kawaguchi
  */
-@Extension
+//@Extension
 public class GroovyshCommand extends CLICommand {
     @Override
     public String getShortDescription() {

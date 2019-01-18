@@ -67,7 +67,7 @@ import jenkins.triggers.SCMTriggerItem;
  *
  * @author Kohsuke Kawaguchi
  */
-@Extension
+//@Extension
 public class BuildCommand extends CLICommand {
     @Override
     public String getShortDescription() {

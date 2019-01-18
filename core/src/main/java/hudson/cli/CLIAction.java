@@ -52,7 +52,7 @@ import hudson.remoting.Channel;
  *
  * @author ogondza
  */
-@Extension @Symbol("cli")
+//@Extension @Symbol("cli")
 @Restricted(NoExternalUse.class)
 public class CLIAction implements UnprotectedRootAction, StaplerProxy {
 

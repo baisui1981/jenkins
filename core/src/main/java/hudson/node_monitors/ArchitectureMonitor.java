@@ -39,7 +39,7 @@ import java.io.IOException;
  * @author Kohsuke Kawaguchi
  */
 public class ArchitectureMonitor extends NodeMonitor {
-    @Extension @Symbol("architecture")
+   // @Extension @Symbol("architecture")
     public static final class DescriptorImpl extends AbstractAsyncNodeMonitorDescriptor<String> {
         @Override
         protected Callable<String, IOException> createCallable(Computer c) {

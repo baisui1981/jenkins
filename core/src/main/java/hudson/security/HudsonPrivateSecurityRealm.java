@@ -561,7 +561,7 @@ public class HudsonPrivateSecurityRealm extends AbstractPasswordBasedSecurityRea
             }
         }
 
-        @Extension @Symbol("password")
+      //  @Extension @Symbol("password")
         public static final class DescriptorImpl extends UserPropertyDescriptor {
             @Override
             public String getDisplayName() {
@@ -601,7 +601,7 @@ public class HudsonPrivateSecurityRealm extends AbstractPasswordBasedSecurityRea
      * Displays "manage users" link in the system config if {@link HudsonPrivateSecurityRealm}
      * is in effect.
      */
-    @Extension @Symbol("localUsers")
+   // @Extension @Symbol("localUsers")
     public static final class ManageUserLinks extends ManagementLink {
         public String getIconFileName() {
             if(Jenkins.getInstance().getSecurityRealm() instanceof HudsonPrivateSecurityRealm)
@@ -712,7 +712,7 @@ public class HudsonPrivateSecurityRealm extends AbstractPasswordBasedSecurityRea
         private static final String JBCRYPT_HEADER = "#jbcrypt:";
     };
 
-    @Extension @Symbol("local")
+   // @Extension @Symbol("local")
     public static final class DescriptorImpl extends Descriptor<SecurityRealm> {
         public String getDisplayName() {
             return Messages.HudsonPrivateSecurityRealm_DisplayName();

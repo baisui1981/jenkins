@@ -36,7 +36,7 @@ import java.util.logging.Logger;
  * @author pjanouse
  * @since TODO
  */
-@Extension
+//@Extension
 public class ClearQueueCommand extends CLICommand {
 
     private static final Logger LOGGER = Logger.getLogger(ClearQueueCommand.class.getName());

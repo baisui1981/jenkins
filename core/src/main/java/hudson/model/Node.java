@@ -235,7 +235,7 @@ public abstract class Node extends AbstractModelObject implements Reconfigurable
     /**
      * Let Nodes be aware of the lifecycle of their own {@link Computer}.
      */
-    @Extension
+   // @Extension
     public static class InternalComputerListener extends ComputerListener {
         @Override
         public void onOnline(Computer c, TaskListener listener) {

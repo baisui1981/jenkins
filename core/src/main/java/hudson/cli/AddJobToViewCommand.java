@@ -36,7 +36,7 @@ import org.kohsuke.args4j.Argument;
  * @author ogondza
  * @since 1.570
  */
-@Extension
+//@Extension
 public class AddJobToViewCommand extends CLICommand {
 
     @Argument(usage="Name of the view", required=true, index=0)

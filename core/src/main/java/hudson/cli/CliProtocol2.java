@@ -21,7 +21,7 @@ import java.security.Signature;
  * @author Kohsuke Kawaguchi
  * @since 1.467
  */
-@Extension @Symbol("cli2")
+//@Extension @Symbol("cli2")
 public class CliProtocol2 extends CliProtocol {
     @Override
     public String getName() {

@@ -44,8 +44,8 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-@Extension(ordinal = Integer.MAX_VALUE - 220)
-@Restricted(NoExternalUse.class)
+//@Extension(ordinal = Integer.MAX_VALUE - 220)
+//@Restricted(NoExternalUse.class)
 public class GlobalToolConfiguration extends ManagementLink {
 
     @Override

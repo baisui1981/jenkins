@@ -47,7 +47,7 @@ import static java.util.logging.Level.*;
  *
  * @since 1.405
  */
-@Extension
+//@Extension
 public class ChannelPinger extends ComputerListener {
     private static final Logger LOGGER = Logger.getLogger(ChannelPinger.class.getName());
     private static final String SYS_PROPERTY_NAME  = ChannelPinger.class.getName() + ".pingInterval";

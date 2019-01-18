@@ -158,7 +158,7 @@ public final class ReverseBuildTrigger extends Trigger<Job> implements Dependenc
         RunListenerImpl.get().invalidateCache();
     }
 
-    @Extension @Symbol("upstream")
+   // @Extension @Symbol("upstream")
     public static final class DescriptorImpl extends TriggerDescriptor {
 
         @Override public String getDisplayName() {
@@ -200,7 +200,8 @@ public final class ReverseBuildTrigger extends Trigger<Job> implements Dependenc
 
     }
 
-    @Extension public static final class RunListenerImpl extends RunListener<Run> {
+    //@Extension 
+    public static final class RunListenerImpl extends RunListener<Run> {
         
         static RunListenerImpl get() {
             return ExtensionList.lookup(RunListener.class).get(RunListenerImpl.class);
@@ -271,7 +272,8 @@ public final class ReverseBuildTrigger extends Trigger<Job> implements Dependenc
         }
     }
 
-    @Extension public static class ItemListenerImpl extends ItemListener {
+    //@Extension 
+    public static class ItemListenerImpl extends ItemListener {
         @Override public void onLocationChanged(Item item, final String oldFullName, final String newFullName) {
             ACL.impersonate(ACL.SYSTEM, new Runnable() {
                 @Override

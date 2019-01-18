@@ -96,7 +96,7 @@ public class HudsonExceptionNote extends ConsoleNote<Object> {
         return "http://stacktrace.jenkins-ci.org/search?query="+className;
     }
 
-    @Extension @Symbol("stackTrace")
+   // @Extension @Symbol("stackTrace")
     public static final class DescriptorImpl extends ConsoleAnnotationDescriptor {
         @Override
         public String getDisplayName() {

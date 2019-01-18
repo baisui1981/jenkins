@@ -49,7 +49,7 @@ import org.kohsuke.args4j.Argument;
  *
  * @author Kohsuke Kawaguchi
  */
-@Extension
+//@Extension
 public class InstallToolCommand extends CLICommand {
     @Argument(index=0,metaVar="KIND",usage="The type of the tool to install, such as 'Ant'")
     public String toolType;

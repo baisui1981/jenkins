@@ -49,7 +49,7 @@ import java.util.Set;
  * @author Kohsuke Kawaguchi
  * @since 1.331
  */
-@Extension
+//@Extension
 public class InstallPluginCommand extends CLICommand {
     public String getShortDescription() {
         return Messages.InstallPluginCommand_ShortDescription();

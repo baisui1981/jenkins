@@ -76,7 +76,7 @@ public class EnvironmentVariablesNodeProperty extends NodeProperty<Node> {
         env.putAll(envVars);
     }
 
-    @Extension @Symbol("envVars")
+  //  @Extension @Symbol("envVars")
     public static class DescriptorImpl extends NodePropertyDescriptor {
 
         @Override

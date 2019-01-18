@@ -40,7 +40,8 @@ import java.util.logging.Logger;
  * Blocks agents from writing to files on the master by default (and also provide the kill switch.)
  */
 @Restricted(DoNotUse.class) // impl
-@Extension public class DefaultFilePathFilter extends ChannelConfigurator {
+//@Extension 
+public class DefaultFilePathFilter extends ChannelConfigurator {
 
     /**
      * Escape hatch to disable this check completely.

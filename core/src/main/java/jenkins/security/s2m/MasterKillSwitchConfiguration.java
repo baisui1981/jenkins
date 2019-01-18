@@ -14,7 +14,7 @@ import org.kohsuke.stapler.StaplerRequest;
  * @author Kohsuke Kawaguchi
  * @since 1.THU
  */
-@Extension
+//@Extension
 public class MasterKillSwitchConfiguration extends GlobalConfiguration {
     @Inject
     AdminWhitelistRule rule;

@@ -232,7 +232,7 @@ public abstract class AuthorizationStrategy extends AbstractDescribableImpl<Auth
             }
         };
 
-        @Extension @Symbol("unsecured")
+       // @Extension @Symbol("unsecured")
         public static final class DescriptorImpl extends Descriptor<AuthorizationStrategy> {
             @Override
             public String getDisplayName() {

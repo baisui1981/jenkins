@@ -37,7 +37,7 @@ import org.kohsuke.args4j.CmdLineException;
  * @author ogondza
  * @since 1.570
  */
-@Extension
+//@Extension
 public class RemoveJobFromViewCommand extends CLICommand {
 
     @Argument(usage="Name of the view", required=true, index=0)

@@ -56,7 +56,7 @@ public class ClockMonitor extends NodeMonitor {
     @Restricted(NoExternalUse.class)
     public static /*almost final*/ AbstractNodeMonitorDescriptor<ClockDifference> DESCRIPTOR;
 
-    @Extension @Symbol("clock")
+    //@Extension @Symbol("clock")
     public static class DescriptorImpl extends AbstractAsyncNodeMonitorDescriptor<ClockDifference> {
         public DescriptorImpl() {
             DESCRIPTOR = this;

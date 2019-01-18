@@ -19,7 +19,7 @@ import java.util.List;
  * @author Kohsuke Kawaguchi
  * @since 1.520
  */
-@Extension @Symbol("queueItemAuthenticator")
+//@Extension @Symbol("queueItemAuthenticator")
 public class QueueItemAuthenticatorConfiguration extends GlobalConfiguration {
     private final DescribableList<QueueItemAuthenticator,QueueItemAuthenticatorDescriptor> authenticators
         = new DescribableList<QueueItemAuthenticator, QueueItemAuthenticatorDescriptor>(this);
@@ -56,7 +56,7 @@ public class QueueItemAuthenticatorConfiguration extends GlobalConfiguration {
         return Jenkins.getInstance().getInjector().getInstance(QueueItemAuthenticatorConfiguration.class);
     }
 
-    @Extension(ordinal = 100)
+   // @Extension(ordinal = 100)
     public static class ProviderImpl extends QueueItemAuthenticatorProvider {
 
         @NonNull

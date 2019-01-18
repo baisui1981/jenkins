@@ -600,7 +600,7 @@ public class NodeProvisioner {
      *
      * @since 1.588
      */
-    @Extension @Symbol("standard")
+    //@Extension @Symbol("standard")
     public static class StandardStrategyImpl extends Strategy {
 
         /** {@inheritDoc} */
@@ -674,46 +674,46 @@ public class NodeProvisioner {
                             });
 
                     CLOUD:
-                    for (Cloud c : Jenkins.getInstance().clouds) {
-                        if (excessWorkload < 0) {
-                            break;  // enough agents allocated
-                        }
-
-                        // Make sure this cloud actually can provision for this label.
-                        if (c.canProvision(state.getLabel())) {
-                            // provisioning a new node should be conservative --- for example if excessWorkload is 1.4,
-                            // we don't want to allocate two nodes but just one.
-                            // OTOH, because of the exponential decay, even when we need one agent,
-                            // excess workload is always
-                            // something like 0.95, in which case we want to allocate one node.
-                            // so the threshold here is 1-MARGIN, and hence floor(excessWorkload+MARGIN) is needed to
-                            // handle this.
-
-                            int workloadToProvision = (int) Math.round(Math.floor(excessWorkload + m));
-
-                            for (CloudProvisioningListener cl : CloudProvisioningListener.all()) {
-                                if (cl.canProvision(c, state.getLabel(), workloadToProvision) != null) {
-                                    // consider displaying reasons in a future cloud ux
-                                    continue CLOUD;
-                                }
-                            }
-
-                            Collection<PlannedNode> additionalCapacities =
-                                    c.provision(state.getLabel(), workloadToProvision);
-
-                            for (CloudProvisioningListener cl : CloudProvisioningListener.all()) {
-                                cl.onStarted(c, state.getLabel(), additionalCapacities);
-                            }
-
-                            for (PlannedNode ac : additionalCapacities) {
-                                excessWorkload -= ac.numExecutors;
-                                LOGGER.log(Level.INFO, "Started provisioning {0} from {1} with {2,number,integer} "
-                                                + "executors. Remaining excess workload: {3,number,#.###}",
-                                        new Object[]{ac.displayName, c.name, ac.numExecutors, excessWorkload});
-                            }
-                            state.recordPendingLaunches(additionalCapacities);
-                        }
-                    }
+//                    for (Cloud c : Jenkins.getInstance().clouds) {
+//                        if (excessWorkload < 0) {
+//                            break;  // enough agents allocated
+//                        }
+//
+//                        // Make sure this cloud actually can provision for this label.
+//                        if (c.canProvision(state.getLabel())) {
+//                            // provisioning a new node should be conservative --- for example if excessWorkload is 1.4,
+//                            // we don't want to allocate two nodes but just one.
+//                            // OTOH, because of the exponential decay, even when we need one agent,
+//                            // excess workload is always
+//                            // something like 0.95, in which case we want to allocate one node.
+//                            // so the threshold here is 1-MARGIN, and hence floor(excessWorkload+MARGIN) is needed to
+//                            // handle this.
+//
+//                            int workloadToProvision = (int) Math.round(Math.floor(excessWorkload + m));
+//
+//                            for (CloudProvisioningListener cl : CloudProvisioningListener.all()) {
+//                                if (cl.canProvision(c, state.getLabel(), workloadToProvision) != null) {
+//                                    // consider displaying reasons in a future cloud ux
+//                                    continue CLOUD;
+//                                }
+//                            }
+//
+//                            Collection<PlannedNode> additionalCapacities =
+//                                    c.provision(state.getLabel(), workloadToProvision);
+//
+//                            for (CloudProvisioningListener cl : CloudProvisioningListener.all()) {
+//                                cl.onStarted(c, state.getLabel(), additionalCapacities);
+//                            }
+//
+//                            for (PlannedNode ac : additionalCapacities) {
+//                                excessWorkload -= ac.numExecutors;
+//                                LOGGER.log(Level.INFO, "Started provisioning {0} from {1} with {2,number,integer} "
+//                                                + "executors. Remaining excess workload: {3,number,#.###}",
+//                                        new Object[]{ac.displayName, c.name, ac.numExecutors, excessWorkload});
+//                            }
+//                            state.recordPendingLaunches(additionalCapacities);
+//                        }
+//                    }
                     // we took action, only pass on to other strategies if our action was insufficient
                     return excessWorkload > 1 - m ? StrategyDecision.CONSULT_REMAINING_STRATEGIES : StrategyDecision.PROVISIONING_COMPLETED;
                 }
@@ -793,7 +793,7 @@ public class NodeProvisioner {
         @Override
         protected void doRun() {
             Jenkins h = Jenkins.getInstance();
-            h.unlabeledNodeProvisioner.update();
+           // h.unlabeledNodeProvisioner.update();
             for( Label l : h.getLabels() )
                 l.nodeProvisioner.update();
         }

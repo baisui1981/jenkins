@@ -9,7 +9,7 @@ import jenkins.model.Jenkins;
  *
  * @author Kohsuke Kawaguchi
  */
-@Extension
+//@Extension
 public class SessionIdCommand extends CLICommand {
     @Override
     public String getShortDescription() {

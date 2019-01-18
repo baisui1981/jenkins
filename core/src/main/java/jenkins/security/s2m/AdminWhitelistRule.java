@@ -35,7 +35,7 @@ import static java.util.logging.Level.*;
  *
  * @author Kohsuke Kawaguchi
  */
-@Extension
+// @Extension
 public class AdminWhitelistRule implements StaplerProxy {
     /**
      * Ones that we rejected but want to run by admins.

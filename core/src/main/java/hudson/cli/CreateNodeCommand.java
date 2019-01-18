@@ -38,7 +38,7 @@ import org.kohsuke.args4j.CmdLineException;
  * @author ogondza
  * @since 1.526
  */
-@Extension
+//@Extension
 public class CreateNodeCommand extends CLICommand {
 
     @Argument(metaVar="NODE", usage="Name of the node")

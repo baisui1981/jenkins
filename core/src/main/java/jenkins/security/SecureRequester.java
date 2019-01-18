@@ -31,8 +31,9 @@ public interface SecureRequester extends ExtensionPoint {
      */
     boolean permit(StaplerRequest req, Object bean);
 
-    @Restricted(NoExternalUse.class)
-    @Extension class Default implements SecureRequester {
+//    @Restricted(NoExternalUse.class)
+//    @Extension 
+    class Default implements SecureRequester {
 
         private static final String PROP = "hudson.model.Api.INSECURE";
         private static final boolean INSECURE = SystemProperties.getBoolean(PROP);

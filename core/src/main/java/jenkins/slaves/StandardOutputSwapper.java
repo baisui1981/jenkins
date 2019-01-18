@@ -22,7 +22,7 @@ import java.util.logging.Logger;
 /**
  * @author Kohsuke Kawaguchi
  */
-@Extension
+//@Extension
 public class StandardOutputSwapper extends ComputerListener {
     @Override
     public void preOnline(Computer c, Channel channel, FilePath root, TaskListener listener)  {

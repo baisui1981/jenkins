@@ -12,7 +12,7 @@ import org.kohsuke.accmod.restrictions.NoExternalUse;
  *
  * @since 1.581
  */
-@Extension(ordinal = 1000) @Symbol("frameOptions")
+//@Extension(ordinal = 1000) @Symbol("frameOptions")
 public class FrameOptionsPageDecorator extends PageDecorator {
     @Restricted(NoExternalUse.class)
     public static boolean enabled = Boolean.valueOf(SystemProperties.getString(FrameOptionsPageDecorator.class.getName() + ".enabled", "true"));

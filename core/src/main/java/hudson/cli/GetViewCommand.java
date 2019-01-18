@@ -32,7 +32,7 @@ import org.kohsuke.args4j.Argument;
  * @author ogondza
  * @since 1.538
  */
-@Extension
+//@Extension
 public class GetViewCommand extends CLICommand {
 
     @Argument(usage="Name of the view to obtain", required=true)

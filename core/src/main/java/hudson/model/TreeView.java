@@ -161,7 +161,7 @@ public class TreeView extends View implements ViewGroup {
     }
 
     // this feature is not public yet
-    @Extension
+  //  @Extension
     public static ViewDescriptor register() {
         if(SystemProperties.getBoolean("hudson.TreeView"))
             return new DescriptorImpl();

@@ -50,7 +50,7 @@ import org.kohsuke.stapler.StaplerRequest;
  * @see DownloadService
  */
 @Restricted(NoExternalUse.class) // no clear reason for this to be an API
-@Extension @Symbol("downloadSettings")
+//@Extension @Symbol("downloadSettings")
 public final class DownloadSettings extends GlobalConfiguration {
 
     public static DownloadSettings get() {
@@ -92,7 +92,7 @@ public final class DownloadSettings extends GlobalConfiguration {
         Jenkins.getInstance().checkPermission(Jenkins.ADMINISTER);
     }
 
-    @Extension @Symbol("updateCenterCheck")
+   // @Extension @Symbol("updateCenterCheck")
     public static final class DailyCheck extends AsyncPeriodicWork {
         private static final Logger LOGGER = Logger.getLogger(DailyCheck.class.getName());
 
@@ -143,7 +143,8 @@ public final class DownloadSettings extends GlobalConfiguration {
 
     }
 
-    @Extension public static final class Warning extends AdministrativeMonitor {
+    //@Extension
+    public static final class Warning extends AdministrativeMonitor {
 
         @Override public boolean isActivated() {
             return DownloadSettings.get().isUseBrowser();

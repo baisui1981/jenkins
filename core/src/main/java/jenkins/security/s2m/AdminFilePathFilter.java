@@ -32,7 +32,7 @@ public class AdminFilePathFilter extends ReflectiveFilePathFilter {
         return rule.checkFileAccess(op,path);
     }
 
-    @Extension
+  //  @Extension
     public static class ChannelConfiguratorImpl extends ChannelConfigurator {
         @Inject
         AdminWhitelistRule rule;

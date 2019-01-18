@@ -88,7 +88,7 @@ public class LastGrantedAuthoritiesProperty extends UserProperty {
     /**
      * Listen to the login success/failure event to persist {@link GrantedAuthority}s properly.
      */
-    @Extension
+   // @Extension
     public static class SecurityListenerImpl extends SecurityListener {
         @Override
         protected void authenticated(@Nonnull UserDetails details) {
@@ -149,7 +149,7 @@ public class LastGrantedAuthoritiesProperty extends UserProperty {
         }
     }
 
-    @Extension @Symbol("lastGrantedAuthorities")
+    //@Extension @Symbol("lastGrantedAuthorities")
     public static final class DescriptorImpl extends UserPropertyDescriptor {
         @Override
         public boolean isEnabled() {

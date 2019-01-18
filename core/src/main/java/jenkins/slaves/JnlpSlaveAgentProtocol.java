@@ -55,7 +55,7 @@ import java.util.logging.Logger;
  * @author Kohsuke Kawaguchi
  * @since 1.467
  */
-@Extension @Symbol("jnlp")
+//@Extension @Symbol("jnlp")
 public class JnlpSlaveAgentProtocol extends AgentProtocol {
     @Inject
     NioChannelSelector hub;

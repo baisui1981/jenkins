@@ -238,7 +238,8 @@ public class LogRecorder extends AbstractModelObject implements Saveable {
         }
     }
 
-    @Extension @Restricted(NoExternalUse.class) public static final class ComputerLogInitializer extends ComputerListener {
+    //@Extension @Restricted(NoExternalUse.class)
+    public static final class ComputerLogInitializer extends ComputerListener {
         @Override public void preOnline(Computer c, Channel channel, FilePath root, TaskListener listener) throws IOException, InterruptedException {
             for (LogRecorder recorder : Jenkins.getInstance().getLog().logRecorders.values()) {
                 for (Target t : recorder.targets) {

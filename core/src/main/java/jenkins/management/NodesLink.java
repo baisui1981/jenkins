@@ -32,7 +32,7 @@ import org.jenkinsci.Symbol;
 /**
  * @author <a href="mailto:nicolas.deloof@gmail.com">Nicolas De Loof</a>
  */
-@Extension(ordinal = Integer.MAX_VALUE - 1000) @Symbol("nodes")
+//@Extension(ordinal = Integer.MAX_VALUE - 1000) @Symbol("nodes")
 public class NodesLink extends ManagementLink {
 
     @Override

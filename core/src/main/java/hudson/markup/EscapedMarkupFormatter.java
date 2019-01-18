@@ -50,7 +50,7 @@ public class EscapedMarkupFormatter extends MarkupFormatter {
         output.write(Util.escape(markup));
     }
 
-    @Extension @Symbol("plainText")
+   // @Extension @Symbol("plainText")
     public static class DescriptorImpl extends MarkupFormatterDescriptor {
 
         @Override

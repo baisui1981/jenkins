@@ -36,7 +36,7 @@ import java.util.logging.Logger;
  *
  * @author Kohsuke Kawaguchi
  */
-@Extension @Symbol("diskUsageCheck")
+//@Extension @Symbol("diskUsageCheck")
 public class HudsonHomeDiskUsageChecker extends PeriodicWork {
     public long getRecurrencePeriod() {
         return HOUR;

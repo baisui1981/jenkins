@@ -49,7 +49,7 @@ import org.kohsuke.stapler.Stapler;
  *
  * @author Kohsuke Kawaguchi
  */
-@Extension @Symbol("reverseProxy")
+//@Extension @Symbol("reverseProxy")
 public class ReverseProxySetupMonitor extends AdministrativeMonitor {
 
     private static final Logger LOGGER = Logger.getLogger(ReverseProxySetupMonitor.class.getName());

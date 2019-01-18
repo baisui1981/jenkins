@@ -1521,8 +1521,9 @@ public abstract class AbstractProject<P extends AbstractProject<P,R>,R extends A
         Label label = getAssignedLabel();
 
         if (isAllSuitableNodesOffline(build)) {
-            Collection<Cloud> applicableClouds = label == null ? Jenkins.getInstance().clouds : label.getClouds();
-            return applicableClouds.isEmpty() ? WorkspaceOfflineReason.all_suitable_nodes_are_offline : WorkspaceOfflineReason.use_ondemand_slave;
+//            Collection<Cloud> applicableClouds = label == null ? Jenkins.getInstance().clouds : label.getClouds();
+//            return applicableClouds.isEmpty() ? WorkspaceOfflineReason.all_suitable_nodes_are_offline : WorkspaceOfflineReason.use_ondemand_slave;
+        	return null;
         }
 
         if (ws==null || !ws.exists()) {

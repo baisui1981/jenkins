@@ -31,7 +31,7 @@ import org.jenkinsci.Symbol;
 /**
  * @author <a href="mailto:nicolas.deloof@gmail.com">Nicolas De Loof</a>
  */
-@Extension(ordinal = Integer.MAX_VALUE - 200) @Symbol("configure")
+//@Extension(ordinal = Integer.MAX_VALUE - 200) @Symbol("configure")
 public class ConfigureLink extends ManagementLink {
 
     @Override

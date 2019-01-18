@@ -96,7 +96,7 @@ public class PasswordParameterDefinition extends SimpleParameterDefinition {
         this.defaultValue = Secret.fromString(defaultValue);
     }
 
-    @Extension @Symbol({"password","nonStoredPasswordParam"})
+   // @Extension @Symbol({"password","nonStoredPasswordParam"})
     public final static class ParameterDescriptorImpl extends ParameterDescriptor {
         @Override
         public String getDisplayName() {

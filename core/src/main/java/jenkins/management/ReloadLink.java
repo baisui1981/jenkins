@@ -31,7 +31,7 @@ import org.jenkinsci.Symbol;
 /**
  * @author <a href="mailto:nicolas.deloof@gmail.com">Nicolas De Loof</a>
  */
-@Extension(ordinal = Integer.MAX_VALUE - 300) @Symbol("reload")
+//@Extension(ordinal = Integer.MAX_VALUE - 300) @Symbol("reload")
 public class ReloadLink extends ManagementLink {
 
     @Override

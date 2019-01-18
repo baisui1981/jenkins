@@ -183,7 +183,7 @@ public class CommandLauncher extends ComputerLauncher {
 
     private static final Logger LOGGER = Logger.getLogger(CommandLauncher.class.getName());
 
-    @Extension @Symbol("command")
+   // @Extension @Symbol("command")
     public static class DescriptorImpl extends Descriptor<ComputerLauncher> {
         public String getDisplayName() {
             return Messages.CommandLauncher_displayName();

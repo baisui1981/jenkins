@@ -16,7 +16,7 @@ import java.util.Collections;
  * @author Kohsuke Kawaguchi
  * @since 1.514
  */
-@Extension
+//@Extension
 public class SetBuildParameterCommand extends CommandDuringBuild {
     @Argument(index=0, metaVar="NAME", required=true, usage="Name of the build variable")
     public String name;

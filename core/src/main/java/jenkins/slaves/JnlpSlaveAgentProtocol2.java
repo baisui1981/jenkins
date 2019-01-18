@@ -20,7 +20,7 @@ import java.net.Socket;
  * @author Kohsuke Kawaguchi
  * @since 1.467
  */
-@Extension @Symbol("jnlp2")
+//@Extension @Symbol("jnlp2")
 public class JnlpSlaveAgentProtocol2 extends JnlpSlaveAgentProtocol {
     @Override
     public String getName() {

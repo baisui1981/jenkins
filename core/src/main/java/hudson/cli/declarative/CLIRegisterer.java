@@ -69,7 +69,7 @@ import java.util.logging.Logger;
  *
  * @author Kohsuke Kawaguchi
  */
-@Extension
+//@Extension
 public class CLIRegisterer extends ExtensionFinder {
     @Override
     public ExtensionComponentSet refresh() throws ExtensionRefreshException {

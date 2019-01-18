@@ -96,9 +96,9 @@ public interface SimpleBuildStep extends BuildStep {
 
     }
 
-    @SuppressWarnings("rawtypes")
-    @Restricted(DoNotUse.class)
-    @Extension
+//    @SuppressWarnings("rawtypes")
+//    @Restricted(DoNotUse.class)
+//    @Extension
     public static final class LastBuildActionFactory extends TransientActionFactory<Job> {
 
         @Override

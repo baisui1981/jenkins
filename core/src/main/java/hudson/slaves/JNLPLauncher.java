@@ -83,7 +83,7 @@ public class JNLPLauncher extends ComputerLauncher {
      */
     public static /*almost final*/ Descriptor<ComputerLauncher> DESCRIPTOR;
 
-    @Extension @Symbol("jnlp")
+   // @Extension @Symbol("jnlp")
     public static class DescriptorImpl extends Descriptor<ComputerLauncher> {
         public DescriptorImpl() {
             DESCRIPTOR = this;
